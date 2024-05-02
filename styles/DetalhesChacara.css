@@ -1,0 +1,72 @@
+.especificações>h1{
+    align-items: center;
+    font-size: 50px;
+    text-align: center;
+}
+
+.especificações{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin: 15px;
+    display: flex;
+    padding: 80px;
+    flex-direction: column;
+}
+
+.box-detalhes1{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    height: 155px;
+    width: auto;
+    text-align: center;
+    align-items: center;
+}
+
+.iten1{
+    flex-direction: column;
+    height: 100px;
+    width: 255px;
+    justify-content: center;
+    align-items: center;
+}
+
+.iten2{
+    flex-direction: column;
+    height: 100px;
+    width: 255px;
+    justify-content: center;
+    align-items: center;
+}
+
+.iten3{
+    flex-direction: column;
+    height: 100px;
+    width: 255px;
+    justify-content: center;
+    align-items: center;
+}
+
+.iten1>h1{
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+}
+
+.iten2>h1{
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+}
+
+.iten3>h1{
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+}
+
+.icons-box>i{
+    font-size: 52px;
+    text-align: center;
+    align-items: center;
+    
+}

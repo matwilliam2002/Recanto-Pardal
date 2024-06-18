@@ -6,6 +6,10 @@
     
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 nav{
   display: flex;
   align-items: center;
@@ -24,6 +28,7 @@ nav>ul>li{
 }
 
 nav>ul>li>a{
+    font-weight: bold;
     text-decoration: none;
     color: black;
     font-size: 25px;
@@ -36,4 +41,13 @@ nav>ul>li>a{
 .icon>i{
     font-size: 45px;
 
+}
+
+hr {
+   
+    width: 40%;
+    border: 0;
+    height: 3px;
+    background: #333;
+    margin: 10px auto;
 }

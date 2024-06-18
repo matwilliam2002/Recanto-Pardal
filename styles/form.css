@@ -2,12 +2,70 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;   
+    font-family: 'Poppins', sans-serif;
+    
 }
 
-.chamada{
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    margin: 15px;
+.mais-info{
+    flex-direction: column;
+    text-align: center;
+    height: 400px;
+    margin-bottom: 30px;
     display: flex;
-    ;
+    padding: 10px 10px 50px ;
+}
+
+.mais-info h1{
+    font-size: 45px;
+    font-weight: bold;
+    color: #7a4e07;
+    margin-bottom: 25px;
+
+}
+
+.mais-info h2{
+    margin-top: 25px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #7a4e07;
+
+}
+
+.mais-info form {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+
+.mais-info input{
+    padding: 10px;
+    width: 55%;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    background-color: #bf6f00;
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda */
+    padding: 10px 20px; /* Ajuste de padding */
+    text-align: center; /* Alinhamento do texto */
+    text-decoration: none; /* Remove a decoração do texto */
+    display: inline-block; /* Exibição em linha */
+    font-size: 16px; /* Tamanho da fonte */
+    margin: 4px 2px; /* Margem */
+    cursor: pointer; /* Cursor de ponteiro */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+input[type="submit"]:hover {
+    background-color: #d98c33;
+}
+
+.mais-info textarea{
+    padding: 10px;
+    resize: vertical;
+    width: 55%;
 }

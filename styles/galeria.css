@@ -1,0 +1,65 @@
+.galeria {
+    background-color: #efefef;;
+    padding: 25px 80PX ;
+    text-align: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.galeria > h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-weight:bold;
+    color: #ef9300;
+}
+
+.imagem-container {
+    display: inline-block;
+    margin: 10px;
+}
+
+.imagem-container > img {
+    width: 300px; /* Definindo um tamanho fixo para as imagens */
+    height: 300px; /* Definindo um tamanho fixo para as imagens */
+    object-fit: cover; /* Faz com que a imagem ocupe todo o espaço do contêiner, cortando-a se necessário */
+    border-radius: 8px;
+    cursor: pointer; /* Indica que a imagem é clicável */
+}
+
+
+
+.popup-image{
+    position: fixed;
+    top: 0; left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+
+.popup-image span{
+    position: absolute;
+    top: 0; right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.popup-image img{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #fff;
+    border-radius: 8px;
+    width: 750px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px){
+    .popup-image img{
+        width: 95%;
+    }
+}

@@ -2,12 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/chamada.css">
     <link rel="stylesheet" href="styles/DetalhesChacara.css">
     <link rel="stylesheet" href="styles/fotos.css">
     <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/galeria.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recanto do pardal</title>
 </head>
@@ -18,10 +25,9 @@
                 <i class="fa-solid fa-tractor"></i>
             </div>
             <ul>
-                <li><a href="#">Especificações</a></li>
-                <li><a href="#">Imagens</a></li>
-                <li><a href="#">Preços</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#especificacoes">Especificações</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#form">Contato</a></li>
                 <li><a href="#">Localização</a></li>
             </ul> 
         </nav>
@@ -41,9 +47,10 @@
             </div>
         </section>
 
-        <section>
+        <section id="especificacoes">
             <div class="especificações">
                 <h1>Detalhes da chácara</h1>
+                <hr>
                 <div class="box-detalhes1">
                     <div class="iten1">
                         <div class="icons-box">
@@ -86,21 +93,70 @@
                 </div>      
            </div>
         </section>
-        <section>
+        <section id="galeria">
+            <div class="galeria">
+                <h1>Galeria de fotos</h1>
+                <hr>
+                <div class="imagem-container">
+                    <img src="./img/img1.jpg" alt="">
+                </div>
+                <div class="imagem-container">
+                    <img src="./img/img2.jpg" alt="">
+                </div>
+                <div class="imagem-container">
+                    <img src="./img/img3.jpg" alt="">
+                </div>
+                <div class="imagem-container">
+                    <img src="img/img4.jpg" alt="">
+                </div>
+                <div class="imagem-container">
+                    <img src="img/img5.jpg" alt="">
+                </div>
+                <div class="imagem-container">
+                    <img src="img/img6.jpg" alt="">
+                </div>
+                <div class="imagem-container">
+                    <img src="img/img7.jpg" alt="">
+                </div>
+                <div class="imagem-container">
+                    <img src="img/img8.jpg" alt="">
+                </div>
+                <div class="imagem-container">
+                    <img src="img/img9.jpg" alt="">
+                </div>
+                <div class="imagem-container">
+                    <img src="img/img10.jpg" alt="">
+                </div>
+                <div class="imagem-container">
+                    <img src="img/img11.jpg" alt="">
+                </div>     
+            </div>
+        </section>
+
+        <div class="popup-image">
+            <span>&times;</span>
+            <img src="img/img1.jpg" alt="">
+        </div>
+        <script src="script.js"></script>
+
+        <section id="form">
             <div class="mais-info">
                 <h2>Mais informações</h2>
                 <h1>Entre em contato agora</h1>
+                <hr>
                 <div class="form-form">
                     <form action="#" method="post">
                         <input type="text" id="nome" name="nome" required placeholder="Digite se nome completo">
                         <input type="email" id="email" name="email" required placeholder="Digite seu email">
                         <input type="tel" id="cel" name="cel" required placeholder="Digite seu whatsapp">
-                        <textarea id="mensagem" name="mensagem" rows="4" cols="50" required ></textarea><br>
+                        <textarea id="mensagem" name="mensagem" rows="4" cols="50" required placeholder="Digite sua mensagem"></textarea><br>
                         <input type="submit" value="Enviar">
                     </form>
                 </div>
             </div>
         </section>
+
+        
     </main>
     <script src="script.js" defer></script>
 

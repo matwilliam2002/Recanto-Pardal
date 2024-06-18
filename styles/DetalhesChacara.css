@@ -1,14 +1,14 @@
 .especificações>h1{
+    font-weight: bold;
+    color: #7a4e07;
     align-items: center;
     font-size: 50px;
     text-align: center;
 }
 
 .especificações{
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    margin: 15px;
     display: flex;
-    padding: 80px;
+    padding: 0px 80PX ;
     flex-direction: column;
 }
 
@@ -47,6 +47,7 @@
 }
 
 .iten1>h1{
+    
     font-size: 30px;
     text-align: center;
     justify-content: center;
@@ -65,6 +66,8 @@
 }
 
 .icons-box>i{
+    margin-bottom: 20px;
+    color: #7a4e07;
     font-size: 52px;
     text-align: center;
     align-items: center;

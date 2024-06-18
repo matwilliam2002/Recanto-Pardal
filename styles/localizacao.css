@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.localizacao {
+    padding: 40px;
+    background-color: #e0e0e0; /* Cor de fundo mais escura */
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.localizacao h1 {
+    font-family: 'Alegreya', serif;
+    font-size: 2.5em;
+    color: #7a4e07;
+    margin-bottom: 20px;
+}
+
+#map {
+    height: 500px;
+    width: 100%;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

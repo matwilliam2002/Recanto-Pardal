@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="styles/localizacao.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +17,7 @@
     <link rel="stylesheet" href="styles/chamada.css">
     <link rel="stylesheet" href="styles/DetalhesChacara.css">
     <link rel="stylesheet" href="styles/fotos.css">
-    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/contato.css">
     <link rel="stylesheet" href="styles/galeria.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recanto do pardal</title>
@@ -22,19 +26,19 @@
     <header>
         <nav>
             <div class="icon">
-                <i class="fa-solid fa-tractor"></i>
+                <img src="img/Recanto_do_pardal-removebg-preview.png" alt="">
             </div>
             <ul>
-                <li><a href="#especificacoes">Especificações</a></li>
-                <li><a href="#galeria">Galeria</a></li>
-                <li><a href="#form">Contato</a></li>
-                <li><a href="#">Localização</a></li>
+                <li><a href="#especificacoes-sec">Especificações</a></li>
+                <li><a href="#galeria-sec">Galeria</a></li>
+                <li><a href="#contato=sec">Contato</a></li>
+                <li><a href="#localizacao-sec">Localização</a></li>
             </ul> 
         </nav>
     </header>
 
     <main>
-        <section>
+        <section id="chamada-sec">
             <div class="chamada">
                 <div class="box1">
                     <h1>Venha aproveitar</h1>
@@ -47,7 +51,7 @@
             </div>
         </section>
 
-        <section id="especificacoes">
+        <section id="especificacoes-sec">
             <div class="especificações">
                 <h1>Detalhes da chácara</h1>
                 <hr>
@@ -93,7 +97,7 @@
                 </div>      
            </div>
         </section>
-        <section id="galeria">
+        <section id="galeria-sec">
             <div class="galeria">
                 <h1>Galeria de fotos</h1>
                 <hr>
@@ -139,26 +143,46 @@
         </div>
         <script src="script.js"></script>
 
-        <section id="form">
+        <section id="contato=sec">
             <div class="mais-info">
                 <h2>Mais informações</h2>
                 <h1>Entre em contato agora</h1>
-                <hr>
                 <div class="form-form">
-                    <form action="#" method="post">
-                        <input type="text" id="nome" name="nome" required placeholder="Digite se nome completo">
+                    <form action="https://formsubmit.co/mateuswrcunha@gmail.com" method="post">
+                        <input type="text" id="name" name="name" required placeholder="Digite se nome completo">
                         <input type="email" id="email" name="email" required placeholder="Digite seu email">
                         <input type="tel" id="cel" name="cel" required placeholder="Digite seu whatsapp">
-                        <textarea id="mensagem" name="mensagem" rows="4" cols="50" required placeholder="Digite sua mensagem"></textarea><br>
+                        <textarea id="subject" name="subject" rows="4" cols="50" required placeholder="Digite sua mensagem"></textarea><br>
                         <input type="submit" value="Enviar">
+
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/#localizacao-sec">
+                        <input type="hidden" name="_captcha" value="false">
                     </form>
                 </div>
+                <div class="social-icons">
+                    <a href="https://wa.me/" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.facebook.com/chacararecantodopardal/?locale=pt_BR" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/seu-link-do-instagram" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="localizacao-sec">
+            <div class="localizacao">
+                <h1>Localização</h1>
+                <div id="map" style="height: 500px; width: 100%; margin-top: 40px;"></div>
             </div>
         </section>
 
         
     </main>
     <script src="script.js" defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdFX0rWqgKk_wO6RSjc336JDp2ckAClK8&callback=initMap" defer></script>
 
 </body>
 </html>

@@ -1,34 +1,36 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    
 }
 
-.mais-info{
+/* Estilos gerais para evitar sobreposição */
+section {
+    margin-bottom: 50px; /* Adicionando margem inferior para todas as seções */
+}
+
+
+.mais-info {
     flex-direction: column;
     text-align: center;
-    height: 400px;
     margin-bottom: 30px;
     display: flex;
-    padding: 10px 10px 50px ;
+    padding: 10px 10px 50px;
 }
 
-.mais-info h1{
+.mais-info h1 {
     font-size: 45px;
     font-weight: bold;
     color: #7a4e07;
     margin-bottom: 25px;
-
 }
 
-.mais-info h2{
+.mais-info h2 {
     margin-top: 25px;
     font-size: 40px;
     font-weight: bold;
-    color: #7a4e07;
-
+    color: #b5761d;
 }
 
 .mais-info form {
@@ -38,7 +40,7 @@
     display: flex;
 }
 
-.mais-info input{
+.mais-info input {
     padding: 10px;
     width: 55%;
     height: 40px;
@@ -64,8 +66,35 @@ input[type="submit"]:hover {
     background-color: #d98c33;
 }
 
-.mais-info textarea{
+.mais-info textarea {
     padding: 10px;
     resize: vertical;
     width: 55%;
+    border-radius: 4px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    margin-top: 50px;
+}
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #0055CC;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #add8e6;
 }

@@ -15,6 +15,11 @@ nav{
   align-items: center;
   height: 10vh;
   justify-content: space-evenly;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+
 }
 
 nav>ul{
@@ -24,24 +29,26 @@ nav>ul{
 
 nav>ul>li{
     margin-right: 20px;
+    margin-top: 10px;
+
 
 }
 
 nav>ul>li>a{
     font-weight: bold;
     text-decoration: none;
-    color: black;
-    font-size: 25px;
-}
-
-.icon{
-    padding: 10px;    
-}
-
-.icon>i{
-    font-size: 45px;
+    color: #6e2348;
+    font-size: 28px;
+    font-family: "Noto Serif", serif;
 
 }
+
+.icon>img{
+    width: 350px;
+    height: auto;
+}
+
+
 
 hr {
    

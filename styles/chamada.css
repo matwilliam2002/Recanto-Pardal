@@ -7,7 +7,7 @@
 }
 
 .chamada{
-    background-color: #f7f7ff;
+    background-color: #fff6d9;
     margin-bottom: 30px;
     margin-left: 100px;
     margin-right: 100px;
@@ -25,17 +25,18 @@
 }
 
 .box1>p{
-    font-weight: bold;
-    font-family: "Alegreya", serif;
-    padding: 30px;
+    font-family: "Helvetica", Sans-serif;
+    color: #757575;
+    margin-left: 80px;
+    margin-top: 20px;
     font-size: 25px;
     text-align:justify;
 }
 
 .box1>h1{
+    margin-left: 50px;
     font-family: "Alegreya", serif;
     color: #ef9300;
-    padding: 10px;
     font-size: 50px;
     text-align: center;
 }

@@ -59,7 +59,36 @@
     object-fit: cover;
 }
 
-@media (max-width: 768px){
+@media screen and (max-width: 1200px) {
+    .galeria {
+        padding: 25px 50px;
+    }
+
+    .imagem-container > img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .galeria {
+        padding: 25px 20px;
+        flex-direction: column;
+    }
+
+    .imagem-container {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .imagem-container > img {
+        width: 100%;
+        height: auto;
+    }
+
+    .galeria > h1 {
+        font-size: 50px;
+    }
     .popup-image img{
         width: 95%;
     }

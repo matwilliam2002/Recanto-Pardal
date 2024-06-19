@@ -73,3 +73,51 @@
     align-items: center;
     
 }
+
+@media screen and (max-width: 1200px) {
+    .especificações {
+        padding: 0 20px;
+    }
+
+    .iten h1 {
+        font-size: 28px;
+    }
+
+    .icons-box > i {
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .especificações > h1 {
+        font-size: 36px;
+    }
+
+    .iten h1 {
+        font-size: 24px;
+    }
+
+    .icons-box > i {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .especificações > h1 {
+        font-size: 50px;
+    }
+
+    .iten1 h1 {
+        font-size: 15px;
+    }
+    .iten2 h1 {
+        font-size: 15px;
+    }
+    .iten3 h1 {
+        font-size: 15px;
+    }
+
+    .icons-box > i {
+        font-size: 40px;
+    }
+}

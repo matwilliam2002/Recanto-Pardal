@@ -72,8 +72,10 @@
 
 @media screen and (max-width: 768px) {
     .galeria {
-        padding: 25px 20px;
+        padding: 25px 20px 0px 20px;
         flex-direction: column;
+        margin-top: 0px;
+        margin-bottom: 0;
     }
 
     .imagem-container {
@@ -83,7 +85,7 @@
 
     .imagem-container > img {
         width: 100%;
-        height: auto;
+        height: 200px;
     }
 
     .galeria > h1 {

@@ -10,7 +10,9 @@ document.querySelector('.popup-image span').onclick = () => {
 }
 
 function initMap() {
-  var center = { lat: -23.198270420025054, lng: -46.804195554635825 };
+  var center = { lat: -23.196109, lng: -46.803599 };
+
+
   var mapOptions = {
       center: center,
       zoom: 17
@@ -27,14 +29,14 @@ function initMap() {
 document.addEventListener('DOMContentLoaded', initMap);
 
 (function(){
-  emailjs.init("RRFNdtNEG4R1PN24P"); // Substitua pelo seu ID de usuário do EmailJS
+  emailjs.init("RRFNdtNEG4R1PN24P"); 
 })();
 
 document.getElementById('contactForm').addEventListener('submit', function(event) {
   event.preventDefault();
 
   const serviceID = 'service_fd6ri09';
-  const templateID = 'template_awulm8g'; // Substitua pelo ID do seu template do EmailJS
+  const templateID = 'template_awulm8g'; 
 
   emailjs.sendForm(serviceID, templateID, this)
       .then(() => {
@@ -44,4 +46,5 @@ document.getElementById('contactForm').addEventListener('submit', function(event
           alert('Erro ao enviar o email. Por favor, tente novamente.');
       });
 });
+
 

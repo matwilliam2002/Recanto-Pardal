@@ -29,3 +29,39 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+@media screen and (max-width: 1200px) {
+    .localizacao {
+        padding: 30px;
+        margin: 15px auto;
+    }
+
+    .localizacao h1 {
+        font-size: 2em;
+    }
+
+    #map {
+        height: 400px;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .localizacao {
+        padding: 20px;
+        margin: 10px auto;
+    }
+
+    .localizacao h1 {
+        font-size: 3.0em;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #map {
+        height: 300px;
+        margin-top: 20px;
+    }
+}

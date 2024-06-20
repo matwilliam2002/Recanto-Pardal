@@ -62,7 +62,66 @@ hr {
 @media screen and (max-width:1200px) {
 
     
-    .navbar{
+    .nav-links{
+       display: none;
+    }
+
+    .navbar {
+        justify-content: center;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+
+    .icon {
+        margin: 0 10px;
+    }
+
+    .icon img {
+        width: 350px; /* Ajuste o tamanho do ícone conforme necessário */
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .nav-links {
         display: none;
+    }
+
+    .navbar {
+        justify-content: center;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        margin-left: 20px;
+        margin-right: 20px; /* Adicionado para consistência */
+    }
+
+    .icon {
+        margin: 0 10px;
+    }
+
+    .icon img {
+        width: 350px; /* Ajuste o tamanho do ícone conforme necessário */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: center;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        margin-left: 8px;
+        margin-right: 20px; /* Adicionado para consistência */
+    }
+
+    .icon {
+        margin: 0 10px;
+    }
+
+    .icon img {
+        width: 350px; /* Ajuste o tamanho do ícone conforme necessário */
     }
 }

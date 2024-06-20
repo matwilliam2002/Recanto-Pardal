@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/chamada.css">
     <link rel="stylesheet" href="styles/DetalhesChacara.css">
-    <link rel="stylesheet" href="styles/fotos.css">
     <link rel="stylesheet" href="styles/contato.css">
     <link rel="stylesheet" href="styles/galeria.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -148,15 +147,12 @@
                 <h2>Mais informações</h2>
                 <h1>Entre em contato agora</h1>
                 <div class="form-form">
-                    <form action="https://formsubmit.co/mateuswrcunha@gmail.com" method="post">
-                        <input type="text" id="name" name="name" required placeholder="Digite se nome completo">
-                        <input type="email" id="email" name="email" required placeholder="Digite seu email">
-                        <input type="tel" id="cel" name="cel" required placeholder="Digite seu whatsapp">
-                        <textarea id="subject" name="subject" rows="4" cols="50" required placeholder="Digite sua mensagem"></textarea><br>
-                        <input type="submit" value="Enviar">
-
-                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/#localizacao-sec">
-                        <input type="hidden" name="_captcha" value="false">
+                    <form id="contactForm">
+                        <input type="text" id="name" name="name" placeholder="Seu nome" required><br>
+                        <input type="email" id="email" name="email" placeholder="Seu email" required><br>
+                        <input type="tel" id="phone" name="phone" placeholder="Seu telefone" required><br>
+                        <textarea id="message" name="message" placeholder="Sua mensagem" required></textarea><br>
+                        <button type="submit">Enviar</button>
                     </form>
                 </div>
                 <div class="social-icons">
@@ -182,6 +178,7 @@
         
     </main>
     <script src="script.js" defer></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdFX0rWqgKk_wO6RSjc336JDp2ckAClK8&callback=initMap" defer></script>
 
 </body>

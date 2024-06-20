@@ -26,3 +26,22 @@ function initMap() {
 
 document.addEventListener('DOMContentLoaded', initMap);
 
+(function(){
+  emailjs.init("RRFNdtNEG4R1PN24P"); // Substitua pelo seu ID de usuário do EmailJS
+})();
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const serviceID = 'service_fd6ri09';
+  const templateID = 'template_awulm8g'; // Substitua pelo ID do seu template do EmailJS
+
+  emailjs.sendForm(serviceID, templateID, this)
+      .then(() => {
+          alert('Email enviado com sucesso!');
+          this.reset();
+      }, (err) => {
+          alert('Erro ao enviar o email. Por favor, tente novamente.');
+      });
+});
+

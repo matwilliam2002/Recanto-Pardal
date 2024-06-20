@@ -5,9 +5,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* Estilos gerais para evitar sobreposição */
 section {
-    margin-bottom: 50px; /* Adicionando margem inferior para todas as seções */
+    margin-bottom: 50px; 
 }
 
 
@@ -33,7 +32,7 @@ section {
     color: #b5761d;
 }
 
-.mais-info form {
+#form {
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -41,29 +40,27 @@ section {
 }
 
 .mais-info input {
-    padding: 10px;
+    padding: 20px;
     width: 55%;
     height: 40px;
     margin-bottom: 20px;
     border-radius: 3px;
 }
 
-input[type="submit"] {
-    background-color: #bf6f00;
-    color: white; /* Cor do texto */
-    border: none; /* Remove a borda */
-    padding: 10px 20px; /* Ajuste de padding */
-    text-align: center; /* Alinhamento do texto */
-    text-decoration: none; /* Remove a decoração do texto */
-    display: inline-block; /* Exibição em linha */
-    font-size: 16px; /* Tamanho da fonte */
-    margin: 4px 2px; /* Margem */
-    cursor: pointer; /* Cursor de ponteiro */
-    border-radius: 4px; /* Bordas arredondadas */
+form button {
+    background-color: #b76e0b;
+    margin-top: 20px;
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    border-radius: 4px; 
+    width: 1015px;
 }
 
-input[type="submit"]:hover {
-    background-color: #d98c33;
+form button:hover {
+    background-color: #a65d08;
 }
 
 .mais-info textarea {

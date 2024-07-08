@@ -47,4 +47,60 @@ document.getElementById('contactForm').addEventListener('submit', function(event
       });
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+  const popupImage = document.querySelector(".popup-image");
+  const popupImgElement = document.querySelector(".popup-content img");
+  const popupVideoElement = document.querySelector(".popup-content video");
+  const closeBtn = document.querySelector(".popup-image span");
+  const prevBtn = document.querySelector(".prev");
+  const nextBtn = document.querySelector(".next");
+  const mediaItems = document.querySelectorAll(".imagem-container img, .imagem-container video");
+
+  let currentIndex = 0;
+
+  function openPopup(index) {
+      currentIndex = index;
+      const currentItem = mediaItems[currentIndex];
+      if (currentItem.tagName.toLowerCase() === "img") {
+          popupImgElement.src = currentItem.src;
+          popupImgElement.style.display = "block";
+          popupVideoElement.style.display = "none";
+      } else if (currentItem.tagName.toLowerCase() === "video") {
+          popupVideoElement.querySelector("source").src = currentItem.querySelector("source").src;
+          popupVideoElement.load();
+          popupVideoElement.style.display = "block";
+          popupImgElement.style.display = "none";
+      }
+      popupImage.style.display = "flex";
+  }
+
+  function closePopup() {
+      popupImage.style.display = "none";
+      popupVideoElement.pause();
+  }
+
+  function showPrevItem() {
+      currentIndex = (currentIndex > 0) ? currentIndex - 1 : mediaItems.length - 1;
+      openPopup(currentIndex);
+  }
+
+  function showNextItem() {
+      currentIndex = (currentIndex < mediaItems.length - 1) ? currentIndex + 1 : 0;
+      openPopup(currentIndex);
+  }
+
+  mediaItems.forEach((item, index) => {
+      item.addEventListener("click", () => openPopup(index));
+  });
+
+  closeBtn.addEventListener("click", closePopup);
+  prevBtn.addEventListener("click", showPrevItem);
+  nextBtn.addEventListener("click", showNextItem);
+
+  popupImage.addEventListener("click", function(event) {
+      if (event.target === popupImage) {
+          closePopup();
+      }
+  });
+});
 

@@ -30,6 +30,10 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.localizacao{
+    visibility: hidden;
+}
+
 @media screen and (max-width: 1200px) {
     .localizacao {
         padding: 30px;

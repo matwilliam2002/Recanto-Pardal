@@ -67,12 +67,16 @@
 
 .icons-box>i{
     margin-bottom: 20px;
-    color: #7a4e07;
+    color: #2f4538;
     font-size: 52px;
     text-align: center;
     align-items: center;
     
 }
+.especificações{
+    visibility: hidden;
+}
+
 
 @media screen and (max-width: 1200px) {
     .especificações {

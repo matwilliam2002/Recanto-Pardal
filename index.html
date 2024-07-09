@@ -2,7 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Margarine&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/localizacao.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,14 +48,14 @@
             <div class="chamada">
                 <div class="box1">
                     <h1>Venha aproveitar</h1>
-                    <p>Paisagismo bem cuidado. Ampla área de lazer e visão panorâmica. Muito arborizada,pomar em formação e grande variedade, já produzindo.
-                    Planta baixa com desenho ajustado para uma grande família. Lugar tranquilo e ótima vizinhança, a 200 metros da estrada municipal.</p>
+                    <p>Procurando o local perfeito para o seu evento especial? O <strong>“Recanto do Pardal”</strong> é o destino ideal para casamentos, aniversários e confraternizações inesquecíveis. Com um cenário deslumbrante e estrutura completa, nossa chácara oferece um ambiente aconchegante e versátil, a poucos minutos da cidade. Transforme seus momentos especiais em memórias eternas. Agende uma visita agora mesmo!</p>
                 </div>
                 <div class="box2">
-                    <img src="img/img-fundo.jpg" alt="">
+                    <img src="img/img-fundo.jpg" alt="Vista deslumbrante da Chácara Recanto do Pardal">
                 </div>
             </div>
         </section>
+        
 
         <section id="especificacoes-sec">
             <div class="especificações">
@@ -59,7 +66,7 @@
                         <div class="icons-box">
                             <i class="fa-solid fa-bed"></i>
                         </div>
-                        <h1>10 Dormitórios</h1>
+                        <h1>acomodação pra 30 pessoas</h1>
                     </div>
                     <div class="iten2">
                         <div class="icons-box">
@@ -98,7 +105,7 @@
         </section>
         <section id="galeria-sec">
             <div class="galeria">
-                <h1>Galeria de fotos</h1>
+                <h1 class="area2">Galeria de fotos</h1>
                 <hr>
                 <div class="imagem-container">
                     <img src="./img/img1.jpg" alt="">
@@ -160,8 +167,8 @@
 
         <section id="contato-sec">
             <div class="mais-info">
-                <h2>Mais informações</h2>
-                <h1>Entre em contato agora</h1>
+                <h2 class="area3">Mais informações</h2>
+                <h1 class="area4">Entre em contato agora</h1>
                 <div class="form-form">
                     <form id="contactForm">
                         <input type="text" id="name" name="name" placeholder="Seu nome" required><br>
@@ -186,13 +193,14 @@
         </section>
         <section id="localizacao-sec">
             <div class="localizacao">
-                <h1>Localização</h1>
+                <h1 class="area5">Localização</h1>
                 <div id="map" style="height: 500px; width: 100%; margin-top: 40px;"></div>
             </div>
         </section>
 
         
     </main>
+    <script src="reveal.js" defer></script>
     <script src="script.js" defer></script>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdFX0rWqgKk_wO6RSjc336JDp2ckAClK8&callback=initMap" defer></script>

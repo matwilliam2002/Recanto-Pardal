@@ -96,6 +96,10 @@ form button:hover {
     background-color: #add8e6;
 }
 
+.mais-info{
+    visibility: hidden;
+}
+
 @media screen and (max-width: 768px) {
     .mais-info h1 {
         font-size: 32px;

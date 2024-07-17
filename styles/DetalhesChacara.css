@@ -1,12 +1,14 @@
 .especificações>h1{
+    font-family: "DM Serif Display", serif;
     font-weight: bold;
-    color: #7a4e07;
+    color: #ef9300;
     align-items: center;
     font-size: 50px;
     text-align: center;
 }
 
 .especificações{
+    margin: 140px 0px 170px 0px;
     display: flex;
     padding: 0px 80PX ;
     flex-direction: column;
@@ -67,7 +69,7 @@
 
 .icons-box>i{
     margin-bottom: 20px;
-    color: #2f4538;
+    color: #7a4e07;
     font-size: 52px;
     text-align: center;
     align-items: center;
@@ -75,6 +77,15 @@
 }
 .especificações{
     visibility: hidden;
+}
+
+.linha1 {
+    align-items: center;
+    justify-content: center;
+    border: none;
+    height: 3px;
+    width: 550px;
+    background-color: black;
 }
 
 
@@ -93,6 +104,11 @@
 }
 
 @media screen and (max-width: 768px) {
+
+    .especificações{
+        margin: 0px;
+    }
+
     .especificações > h1 {
         font-size: 36px;
     }
@@ -103,6 +119,13 @@
 
     .icons-box > i {
         font-size: 36px;
+    }
+
+    .linha1 {
+        align-items: center;
+        justify-content: center;
+        border: none;
+        width: 300px;      
     }
 }
 

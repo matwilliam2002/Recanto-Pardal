@@ -5,17 +5,15 @@
     font-family: 'Poppins', sans-serif;
 }
 
-section {
-    margin-bottom: 50px; 
-}
+
 
 
 .mais-info {
     flex-direction: column;
     text-align: center;
-    margin-bottom: 30px;
     display: flex;
-    padding: 10px 10px 50px;
+    padding: 0px 10px 10px;
+    margin-bottom: 170px;
 }
 
 .mais-info h1 {
@@ -135,6 +133,11 @@ form button:hover {
 }
 
 @media screen and (max-width: 1200px) {
+
+    .mais-info{ 
+        margin-bottom: 50px;
+    }
+     
     .mais-info h1 {
         font-size: 32px;
     }

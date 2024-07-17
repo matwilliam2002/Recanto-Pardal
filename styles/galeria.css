@@ -1,16 +1,18 @@
 .galeria {
     background-color: #f9f9f9;
-    padding: 25px 80px;
+    padding: 25px 40px 25px 40px;
     text-align: center;
     align-items: center;
-    margin-top: 100px;
+    margin-bottom: 50px;
 }
 
 .galeria > h1 {
     font-size: 50px;
+    font-family: "DM Serif Display", serif;
     margin-bottom: 10px;
     font-weight: bold;
     color: #ef9300;
+
 }
 
 .imagem-container {
@@ -19,8 +21,8 @@
 }
 
 .imagem-container > img, .imagem-container > video {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 8px;
     cursor: pointer;
@@ -57,6 +59,15 @@
     align-items: center;
 }
 
+.linha2 {
+    align-items: center;
+    justify-content: center;
+    border: none;
+    height: 3px;
+    width: 300px;
+    background-color: black;
+}
+
 .popup-content img, .popup-content video {
     max-width: 100%;
     max-height: 80vh;
@@ -88,43 +99,65 @@
     visibility: hidden;
 }
 
-@media screen and (max-width: 1200px) {
-    .galeria {
-        padding: 25px 50px;
-    }
+@media (max-width: 768px) {
+    .galeria > h1 {
+        font-size: 51px;
 
+    }
+    
     .imagem-container > img, .imagem-container > video {
-        width: 250px;
-        height: 250px;
-        
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .galeria {
-        padding: 25px 20px 0px 20px;
-        flex-direction: column;
-        margin-top: 0px;
-        margin-bottom: 0;
+        width: 60px;
+        height: 60px;
     }
 
     .imagem-container {
-        width: 100%;
-        margin: 5px 0;
+        margin: 20px; 
     }
 
-    .imagem-container > img, .imagem-container > video {
-        width: 100%;
-        height: 200px;
+    .popup-image span {
+        font-size: 40px;
     }
 
+    .linha2 {
+        align-items: center;
+        justify-content: center;
+        border: none;
+        width: 140px;      
+    }
+
+    .nav-arrows {
+        position: absolute; /* Mantém o posicionamento absoluto */
+        top: 48%; /* Ajusta a posição das setas mais para cima */
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 101;
+    }
+
+    .nav-arrows a {
+        font-size: 37px;
+    }
+
+   
+}
+
+/* Media Query para tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
     .galeria > h1 {
         font-size: 50px;
     }
+    
+    .imagem-container > img, .imagem-container > video {
+        width: 150px;
+        height: 150px;
+    }
 
-    .popup-content img {
-        width: 98%;
-        margin: auto;
-        
+    .popup-image span {
+        font-size: 50px;
+    }
+
+    .nav-arrows a {
+        font-size: 50px;
     }
 }

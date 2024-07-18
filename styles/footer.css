@@ -1,0 +1,32 @@
+
+footer {
+   background-color: #333;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 30px;
+   padding: 10px 0;
+
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 20px;
+    }
+
+    p {
+        font-size: 0.775rem; /* Fonte menor em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    p {
+        font-size: 0.7rem;
+    }
+}

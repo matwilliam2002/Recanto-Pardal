@@ -10,7 +10,7 @@
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 0px auto 170px auto ;
+    margin: 0px auto 100px auto ;
     max-width: 1300px;
 }
 
@@ -65,6 +65,11 @@
         height: 400px;
         margin-top: 30px;
     }
+
+    .endereco {
+        font-size: 15px;
+        padding: 5px;
+    }
     
 }
 
@@ -87,7 +92,7 @@
         margin-top: 20px;
     }
     .endereco {
-        font-size: 12px;
+        font-size: 11px;
         padding: 8px;
     }
     

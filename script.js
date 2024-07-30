@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initMap();
 
     (function(){
-        emailjs.init("RRFNdtNEG4R1PN24P"); 
+        emailjs.init("RRFNdtNEG4R1PN24P"); // senha do emailjs = 123456789
     })();
 
     document.getElementById('contactForm').addEventListener('submit', function(event) {

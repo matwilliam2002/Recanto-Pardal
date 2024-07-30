@@ -17,14 +17,14 @@ p {
 
 @media (max-width: 768px) {
     footer {
-        padding: 20px;
+        padding: 10px; /* Ajustei o padding para telas menores */
     }
-
+ 
     p {
         font-size: 0.775rem; /* Fonte menor em telas menores */
     }
 }
-
+ 
 @media (max-width: 480px) {
     p {
         font-size: 0.7rem;
